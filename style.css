@@ -29,6 +29,7 @@ header {
     width: 30vh; /* Adjust size as needed */
     height: auto;
 }
+
 button {
     width: 500px; ;
     height: 150px; ;
@@ -51,9 +52,9 @@ h2
     font-size: 30px;
     color: white;
 }
+/* find a way to make the picture fit correctly within the frame*/
 body{
     background-image: url(Happy\ family.png);
-    height: 100%;
-    WIDTH: 100%;
-
+    height: 100vh;
+    width: 100vh;
 }
