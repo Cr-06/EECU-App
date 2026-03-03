@@ -30,7 +30,7 @@ header {
     height: auto;
 }
 
-button {
+.btn {
     width: 500px; ;
     height: 150px; ;
     display: flex;
@@ -39,8 +39,13 @@ button {
     font-size: 30px;
     background-color: #0054A4;
     color: white;
+    margin-top: 20px;
 }
 
+#button {
+    display: flex;
+    justify-content: center;
+}
 
 h1 {
     font-size: 50px;
@@ -50,11 +55,33 @@ h1 {
 h2
 {
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 /* find a way to make the picture fit correctly within the frame*/
-body{
+.main-body {
     background-image: url(Happy\ family.png);
-    height: 100vh;
-    width: 100vh;
+    background-size: cover;
+}
+
+#career-select {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #0054a4;
+    color: white;
+}
+
+#career-select:hover {
+    background-color: #003d7a;
 }

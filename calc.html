@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Career Selection</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="eecu-logo 1.png" alt="Background image for landing page" class="eecu-logo">
+            <h1>EECU Wise-Up Budget Calculator</h1>
+        </div>
+    </header>
+    <h1>Career Selection</h1>
+    <p>Choose a career path to see the average salary and job outlook.</p>
+
+    <select id="career-select">
+        <option value="">Select a career</option>
+        <option value="software-engineer">Software Engineer</option>
+        <option value="nurse">Nurse</option>
+        <option value="teacher">Teacher</option>
+        <option value="data-scientist">Data Scientist</option>
+    </select>
+
+    <div id="career-info">
+        <!-- Career information will be displayed here -->
+    </div>
+
+    <script>
+        const careerSelect = document.getElementById('career-select');
+        const careerInfo = document.getElementById('career-info');
+
+        const careers = {
+            'software-engineer': {
+                salary: '$100,000',
+                outlook: 'Growing rapidly'
+            },
+            'nurse': {
+                salary: '$70,000',
+                outlook: 'Stable with growth'
+            },
+            'teacher': {
+                salary: '$50,000',
+                outlook: 'Stable'
+            },
+            'data-scientist': {
+                salary: '$120,000',
+                outlook: 'Growing rapidly'
+            }
+        };
+
+        careerSelect.addEventListener('change', function() {
+            const selectedCareer = this.value;
+            if (selectedCareer) {
+                const info = careers[selectedCareer];
+                careerInfo.innerHTML = `<h2>${this.options[this.selectedIndex].text}</h2><p>Average Salary: ${info.salary}</p><p>Job Outlook: ${info.outlook}</p>`;
+            } else {
+                careerInfo.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+</html>
