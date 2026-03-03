@@ -1,4 +1,7 @@
 *{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
     
 }
 
@@ -9,16 +12,49 @@ h1 {
 
 header {
     background-color: #0054A4;
+    margin: 0px;
 }
 
 .header-container {
     display: flex;
     align-items: center; /* Aligns the items vertically in the middle */
     gap: 20px; /* Adds space between the image and the H1 */
+    flex-direction: row; /* Ensures the image and H1 are in a row */
+    justify-content: space-evenly;
+    padding: 3vh; /* Adds padding around the content */
+    font-size: 40px;
 }
 
 .header-container img {
-    width: 50px; /* Adjust size as needed */
+    width: 30vh; /* Adjust size as needed */
     height: auto;
 }
 
+button {
+    width: 500px; ;
+    height: 150px; ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #0054A4;
+    color: white;
+}
+
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+h2
+{
+    font-size: 30px;
+    color: white;
+}
+/* find a way to make the picture fit correctly within the frame*/
+body{
+    background-image: url(Happy\ family.png);
+    height: 100vh;
+    width: 100vh;
+}
