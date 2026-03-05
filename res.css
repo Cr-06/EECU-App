@@ -28,22 +28,13 @@ header {
     height: auto;
 }
 
-.cards1 {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    border: 1px solid #0054A4; /*Create a box model for the classes, go based off the figma deisgn*/
+.the-two-btns {
+    background-color:#0054A4 ;
+    font-size:36px;
+    color: #fff;
+}
+footer h1 {
+    color: #487451;
+    font-size: 90px;
 }
 
-
-.cntueBtn {
-    width: 600px;
-    height: 100px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
-    text-decoration: none;
-    background-color: #0054A4;
-    color: white;
-    margin-top: 20px;
-}

@@ -16,34 +16,43 @@
     </header>
     <main>
         <section class="cards1">
-        <h1>Career Selection</h1>
-        <p>Choose a career path to see the average salary and job outlook.</p>
     
-        <div id="career-info">
-            <!-- Career information will be displayed here -->
-        </div></section>
+    <label id="career-info">
+        <!-- Career information will be displayed here -->
+    </label>
 
         <select id="career-dropdown">
             <option value="">-- Choose a Career --</option>   
         </select>
         </select>
         <div id="career-details">
-            <p>Job: <span id="display-name">N/A</span></p>
-            <p>Salary: <span id="display-salary">N/A</span></p>
+            <p>Job Title: <span id="display-name">N/A</span></p>
+            <p> Annual Salary: <span id="display-salary">N/A $ Annually</span></p>
         </div>
-    </main>
-    <section class="Standard Deduction">
+        </section>
+    <section class="cards2">          
+    <label class="Standard-Deduction">
         <h2>Standard Deduction</h2>
         <p>$16,100.00</p>
+    </label>
     </section>
-    <section class="Estimated Monthly After-Taxes">
+    <section class="cards3">
+    <label class="Estimated-Monthly-After-Taxes">
         <h2> Estimated Monthly After Taxes</h2>
-    </section>
-    <section class="Taxes">
-        <h2>Taxes</h2>
-    </section>
-<!--Create a continue button -->
+        <h2>$ Monthly</h2>
+    </label>
 
+    <section class="cards4">
+    <label class="Taxes">
+        <h2>Taxes</h2>
+        <h2> medicare:</h2>
+        <h2>1.45%</h2>
+        <h2>Social Security</h2>
+        <h2>N/A%</h2>
+    </label>
+    </section>
+    </main>
+<a href="results.html" class="cntueBtn">Continue</a>
 
 <script src="./JavaScript/fetch-Data-API.js"></script>
 </body>

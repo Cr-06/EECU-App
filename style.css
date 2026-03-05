@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;   
     box-sizing: border-box;
-    font-family: Istok Web;
+    font-family: "Istok Web";
     background-image: url(./imgs/Wecloming-Hero-image2.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,6 +30,8 @@ header {
     font-size: 35px;
 }
 
+
+
 .header-container img {
     width: 30vh; /* Adjust size as needed */
     height: auto;
@@ -47,6 +49,7 @@ header {
     color: white;
     margin-top: 20px;
 }
+
 
 #button {
     display: flex;
