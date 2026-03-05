@@ -26,3 +26,9 @@ header {
     width: 30vh; /* Adjust size as needed */
     height: auto;
 }
+
+.cards1 {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    border: 1px solid #0054A4; /*Create a box model for the classes, go based off the figma deisgn*/
+}
