@@ -38,7 +38,7 @@ document.getElementById("career-dropdown").addEventListener("change", function(e
     }
 });
 
-// Estimated Monthly After Taxes//
+// Estimated Monthly After Taxes
 
 
 // Run the fetch

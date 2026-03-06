@@ -1,11 +1,15 @@
 body {
+    display:flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
+
 .top {
     text-align: center;
     color: white;
 }
+
 header {
     background-color: #0054A4;
     margin: 0px;
@@ -32,3 +36,53 @@ header {
     grid-template-columns: 1fr, 1fr;
     border: 1px solid #0054A4; /*Create a box model for the classes, go based off the figma deisgn*/
 }
+
+#career-details{
+    background-color:#0156A6;
+    display:grid;
+    grid-template-rows:44% 44%;
+}
+
+.deduction{
+    background-color:#0156A6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.monthly-taxes{
+    background-color:#0156A6;
+    display:grid;
+    grid-template-rows:48% 48%;
+}
+
+.taxes{
+    background-color:#0156A6;
+    display:grid;
+    grid-template-rows:10% 81%;
+}
+
+.career-cont{
+    align-self:center;
+    width:70vw;
+    justify-content: space-around;
+    display:grid;
+    grid-template-columns:repeat(3, 26%);
+}
+
+#career-details *{
+    background-color: white;
+}
+
+.deduction *{
+    background-color: white;
+}
+
+.monthly-taxes *{
+    background-color: white;
+}
+
+.taxes *{
+    background-color: white;
+}
+

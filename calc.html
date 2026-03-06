@@ -14,35 +14,38 @@
             <h1 class="top">EECU Wise-Up Budget Calculator</h1>
         </div>
     </header>
-    <main>
-        <section class="cards1">
-        <h1>Career Selection</h1>
-        <p>Choose a career path to see the average salary and job outlook.</p>
+            <section class="cards1">
+            <h1>Career Selection</h1>
+            <p>Choose a career path to see the average salary and job outlook.</p>
     
-        <div id="career-info">
+            <div id="career-info">
             <!-- Career information will be displayed here -->
-        </div></section>
+            </div>
+        </section>
 
         <select id="career-dropdown">
             <option value="">-- Choose a Career --</option>   
         </select>
         </select>
+    <div class="career-cont">
         <div id="career-details">
             <p>Job: <span id="display-name">N/A</span></p>
             <p>Salary: <span id="display-salary">N/A</span></p>
         </div>
-    </main>
-    <section class="Standard Deduction">
-        <h2>Standard Deduction</h2>
-        <p>$16,100.00</p>
-    </section>
-    <section class="Estimated Monthly After-Taxes">
-        <h2> Estimated Monthly After Taxes</h2>
-    </section>
-    <section class="Taxes">
-        <h2>Taxes</h2>
-    </section>
-<!--Create a continue button -->
+        <div class="mid-cards">
+            <section class="deduction">
+                <h2>Standard Deduction</h2>
+                <p>$16,100.00</p>
+            </section>
+            <section class="monthly-taxes">
+                <h2> Estimated Monthly After Taxes</h2>
+            </section>
+        </div>
+        <section class="taxes">
+            <h2>Taxes</h2>
+        </section>
+    </div>
+        <a href=".html" class="continue">Continue</a>
 
 
 <script src="./JavaScript/fetch-Data-API.js"></script>
