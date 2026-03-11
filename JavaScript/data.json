@@ -1,0 +1,298 @@
+[
+    {
+        "Occupation": "Accountant",
+        "Salary": 64700
+    },
+    {
+        "Occupation": "Advance Tractor/Trailer Driver",
+        "Salary": 60663
+    },
+    {
+        "Occupation": "Agricultural Engineer",
+        "Salary": 83000
+    },
+    {
+        "Occupation": "Architect",
+        "Salary": 72400
+    },
+    {
+        "Occupation": "Auto Tech/Mechanic",
+        "Salary": 60000
+    },
+    {
+        "Occupation": "Aviation Tech. Mechanic",
+        "Salary": 64761
+    },
+    {
+        "Occupation": "Biologist",
+        "Salary": 88000
+    },
+    {
+        "Occupation": "Bus Driver",
+        "Salary": 62000
+    },
+    {
+        "Occupation": "Business Development Officer",
+        "Salary": 68640
+    },
+    {
+        "Occupation": "Business Manager",
+        "Salary": 70000
+    },
+    {
+        "Occupation": "CNC Manufacturing",
+        "Salary": 78020
+    },
+    {
+        "Occupation": "Carpenter",
+        "Salary": 65000
+    },
+    {
+        "Occupation": "Chef",
+        "Salary": 69382
+    },
+    {
+        "Occupation": "Chemist",
+        "Salary": 58808
+    },
+    {
+        "Occupation": "Civil Engineering Technician",
+        "Salary": 63000
+    },
+    {
+        "Occupation": "Commercial Driver",
+        "Salary": 58000
+    },
+    {
+        "Occupation": "Computer Technician",
+        "Salary": 63000
+    },
+    {
+        "Occupation": "Correctional Officer",
+        "Salary": 71000
+    },
+    {
+        "Occupation": "Cosmetologist",
+        "Salary": 49000
+    },
+    {
+        "Occupation": "Credit Union/Bank Manager",
+        "Salary": 75000
+    },
+    {
+        "Occupation": "Daycare Director",
+        "Salary": 55000
+    },
+    {
+        "Occupation": "Dental Hygienist",
+        "Salary": 92500
+    },
+    {
+        "Occupation": "Dentist",
+        "Salary": 154000
+    },
+    {
+        "Occupation": "Detective",
+        "Salary": 70000
+    },
+    {
+        "Occupation": "Diesel Tech/Mechanic",
+        "Salary": 65000
+    },
+    {
+        "Occupation": "Doctor/Physician",
+        "Salary": 170000
+    },
+    {
+        "Occupation": "Electrician",
+        "Salary": 68000
+    },
+    {
+        "Occupation": "Electronic Engineer",
+        "Salary": 94000
+    },
+    {
+        "Occupation": "EMT",
+        "Salary": 49000
+    },
+    {
+        "Occupation": "Energy Manager",
+        "Salary": 83000
+    },
+    {
+        "Occupation": "Engineer",
+        "Salary": 76000
+    },
+    {
+        "Occupation": "Environmental Scientist",
+        "Salary": 69300
+    },
+    {
+        "Occupation": "Fashion Designer",
+        "Salary": 67000
+    },
+    {
+        "Occupation": "Fire Fighter",
+        "Salary": 75000
+    },
+    {
+        "Occupation": "Forensic Pathologist",
+        "Salary": 78500
+    },
+    {
+        "Occupation": "Forest Ranger",
+        "Salary": 61000
+    },
+    {
+        "Occupation": "Graphic/Media Designer",
+        "Salary": 59000
+    },
+    {
+        "Occupation": "H/C HVAC",
+        "Salary": 69000
+    },
+    {
+        "Occupation": "Highway Patrol",
+        "Salary": 85000
+    },
+    {
+        "Occupation": "Home Inspector",
+        "Salary": 56000
+    },
+    {
+        "Occupation": "Industrial Mechanic",
+        "Salary": 48000
+    },
+    {
+        "Occupation": "Interior Designer",
+        "Salary": 63000
+    },
+    {
+        "Occupation": "Investment Analyst",
+        "Salary": 75000
+    },
+    {
+        "Occupation": "Lab Technician",
+        "Salary": 53000
+    },
+    {
+        "Occupation": "Landscaper Horticulture",
+        "Salary": 49000
+    },
+    {
+        "Occupation": "Lawyer",
+        "Salary": 93000
+    },
+    {
+        "Occupation": "Marketing/Sales Manager",
+        "Salary": 85000
+    },
+    {
+        "Occupation": "Media/Communications",
+        "Salary": 57000
+    },
+    {
+        "Occupation": "Medical RepairTech.",
+        "Salary": 57000
+    },
+    {
+        "Occupation": "Military",
+        "Salary": 66000
+    },
+    {
+        "Occupation": "Nurse",
+        "Salary": 82000
+    },
+    {
+        "Occupation": "Nutritionist",
+        "Salary": 62000
+    },
+    {
+        "Occupation": "Oceanographer",
+        "Salary": 80000
+    },
+    {
+        "Occupation": "Pastor",
+        "Salary": 70000
+    },
+    {
+        "Occupation": "PG&E ATT Technician",
+        "Salary": 60000
+    },
+    {
+        "Occupation": "Pharmacist",
+        "Salary": 110000
+    },
+    {
+        "Occupation": "Photographer",
+        "Salary": 52000
+    },
+    {
+        "Occupation": "Physical Therapist",
+        "Salary": 88000
+    },
+    {
+        "Occupation": "Pilot Commercial",
+        "Salary": 70000
+    },
+    {
+        "Occupation": "Plumber",
+        "Salary": 60320
+    },
+    {
+        "Occupation": "Police Officer",
+        "Salary": 65000
+    },
+    {
+        "Occupation": "Principal",
+        "Salary": 100000
+    },
+    {
+        "Occupation": "Probation Officer",
+        "Salary": 58000
+    },
+    {
+        "Occupation": "Psychologist",
+        "Salary": 86500
+    },
+    {
+        "Occupation": "Retail Sales Associate",
+        "Salary": 46000
+    },
+    {
+        "Occupation": "Social Media Coordinator",
+        "Salary": 47200
+    },
+    {
+        "Occupation": "Social Worker",
+        "Salary": 76200
+    },
+    {
+        "Occupation": "Solar Energy Tech.",
+        "Salary": 65000
+    },
+    {
+        "Occupation": "Speech Pathologist",
+        "Salary": 100000
+    },
+    {
+        "Occupation": "Teacher",
+        "Salary": 63000
+    },
+    {
+        "Occupation": "UPS/Fed Ex Driver",
+        "Salary": 58000
+    },
+    {
+        "Occupation": "Veterinarian",
+        "Salary": 112000
+    },
+    {
+        "Occupation": "Welder/Metal Specialist",
+        "Salary": 66000
+    },
+    {
+        "Occupation": "Wind EnergyTechnician",
+        "Salary": 70000
+    }
+]

@@ -42,7 +42,7 @@ document.getElementById("career-dropdown").addEventListener("change", function (
 
 
 // Run the fetch
-fetchData("https://eecu-data-server.vercel.app/data/2023");
+fetchData("https://eecu-data-server.vercel.app/data");
 
 let currentChart = new Chart(canvas,
     {
