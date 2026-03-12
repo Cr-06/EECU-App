@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>EECU Budget Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -15,28 +17,52 @@
             <h1 class="top">EECU Wise-Up Budget Calculator</h1>
         </div>
     </header>
-<section class="buttons">
-    <a href="index.html" class="the-two-btns">Reset</a>
-    <a href="calc.html" class="the-two-btns">Back</a>
-    <script src="./JavaScript/functionality.js"></script>
+    <section class="buttons">
+        <a href="index.html" class="the-two-btns">Reset</a>
+        <a href="calc.html" class="the-two-btns">Back</a>
     </section>
+
+    <!--For the color next to the inputs imma js put that
+    under the pie chart when I finally get to it-->
+
     <section class="card-align">
-<section class="pie-input">
-    <span class="pie-color"></span>
-    <h4 class="expense">Student Loans</h4>
-<input class="expense-input" type="text" placeholder="$ Amount">
-</section>
+        <section class="pie-input">
+            <h4 class="expense">Student Loans</h4>
+            <input class="expense-input" type="text" placeholder="$ Amount">
+        </section>
 
-<section class="pie-input">
-    <span class="pie-color"></span>
-    <h4 class="expense">Student Loans</h4>
-<input class="expense-input" type="text" placeholder="$ Amount">
+        <section class="pie-input">
+            <h4 class="expense">Housing</h4>
+            <input class="expense-input" type="text" placeholder="$ Amount">
+        </section>
 
+        <section class="pie-input">
+            <h4 class="expense">Essentials</h4>
+            <input class="expense-input" type="text" placeholder="$ Amount">
+        </section>
 
-</section>
+        <section class="pie-input">
+            <h4 class="expense">Lifestyle</h4>
+            <input class="expense-input" type="text" placeholder="$ Amount">
+        </section>
+
+        <section class="pie-input">
+            <h4 class="expense">Future-Proofing</h4>
+            <input class="expense-input" type="text" placeholder="$ Amount">
+        </section>
+
+        <section class="pie-input">
+            <h4 class="expense">Net Monthly Income</h4>
+            <input class="expense-input" type="text" placeholder="$ Amount">
+        </section>
+
     </section>
     <footer>
-    <h2>Surplus!</h2>
-    <footer>-</footer>
+        <span id="surplus-box">
+
+        </span>
+    </footer>
 </body>
+<script src="./JavaScript/functionality.js"></script>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Career Selection</title>
 </head>
+
 <body class="calc-body">
     <header>
         <div class="header-container" id="header-container">
@@ -15,50 +17,55 @@
         </div>
     </header>
     <span class="align-body">
-            <section class="cards1">
+        <section class="cards1">
             <h2>Career Selection</h2>
             <p>Choose a career path to see the average salary and job outlook.</p>
-    
+
             <div id="career-info">
-            <!-- Career information will be displayed here -->
+                <!-- Career information will be displayed here -->
             </div>
         </section>
 
         <select id="career-dropdown">
-            <option value="">-- Choose a Career --</option>   
+            <option value="">-- Choose a Career --</option>
         </select>
-        </select>
-    <div class="career-cont">
-        <div id="career-details">
-            <h2>Job Title: <span id="display-name">N/A</span></h2>
-            <h2> Annual Salary: <span id="display-salary">N/A $ Annually</span></h2>
-        </div>
-        <div class="mid-cards">
-            <section class="deduction">
-                <h2>Standard Deduction</h2>
-                <h3>$16,100.00</h3>
-            </section>
-            <section class="monthly-taxes">
-                <h2> Estimated Monthly After Taxes</h2>
-                <h2 id="display-monthly">N/A $ Monthly</h2>
-            </section>
-        </div>
-        <div class="end-card">
-            <section class="taxes">
-                <h2>Taxes</h2>
-                <div id="tax-breakdown">
-                    <p>Federal Tax: <span id="display-federal">N/A $</span></p> 
-                    <p>Medicare: <span id="display-medicare">N/A $</span></p>
-                    <p>Social Security: <span id="display-ss">N/A $</span></p>
-                    <p>State Taxes: <span id="display-state">N/A</span></p>
+        <div class="career-cont">
+            <div id="career-details">
+                <div id="career-details-2">
+                    <h2>Job Title: <span id="display-name">N/A</span></h2>
+                    <h2> Annual Salary: <span id="display-salary">N/A $ Annually</span></h2>
                 </div>
-            </section>
+            </div>
+            <div class="mid-cards">
+                <section class="deduction">
+                    <h2>Standard Deduction</h2>
+                    <h3>$16,100.00</h3>
+                </section>
+                <section class="monthly-taxes">
+                    <h2> Estimated Monthly After Taxes</h2>
+                    <h2 id="display-monthly">N/A $ Monthly</h2>
+                </section>
+            </div>
+            <div class="end-card">
+                <section class="taxes">
+                    <h2>Taxes</h2>
+                    <div id="tax-breakdown">
+                        <p>Federal Tax: <span id="display-federal">N/A $</span></p>
+                        <p>Medicare: <span id="display-medicare">N/A $</span></p>
+                        <p>Social Security: <span id="display-ss">N/A $</span></p>
+                        <p>State Taxes: <span id="display-state">N/A</span></p>
+                    </div>
+                </section>
+            </div>
         </div>
-  
-                <!-- Tax breakdown will be displayed here -->
-   
+    </span>
+    <!-- Tax breakdown will be displayed here -->
+    <footer id="calc-cont">
         <a href="results.html" class="continue">Continue</a>
-</span>
-<script src="./JavaScript/functionality.js"></script>
+    </footer>
+
+
 </body>
+<script src="./JavaScript/functionality.js"></script>
+
 </html>
