@@ -1,11 +1,13 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Istok Web";
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 100vh;
 }
 
 #Index-body {
@@ -37,29 +39,24 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    /* Aligns the items vertically in the middle */
     gap: 20px;
-    /* Adds space between the image and the H1 */
     flex-direction: row;
-    /* Ensures the image and H1 are in a row */
     justify-content: space-evenly;
     padding: 3vh;
-    /* Adds padding around the content */
     font-family: Istok Web;
     font-size: 35px;
+    height: 10vh;
 }
 
 .header-container img {
     width: 30vh;
-    /* Adjust size as needed */
-    height: auto;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .btn {
     width: 500px;
-    ;
     height: 150px;
-    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +140,7 @@ h3 {
     color: white;
     height: 5vh;
     border-radius: 10px;
+    width: 40vh;
 }
 
 #career-select:hover {
@@ -161,15 +159,33 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    margin-top: 5px;
     flex-direction: column;
+    height: fit-content;
+    width: 100%;
 }
 
+
+.career-cont {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 95%;
+    align-items: stretch;
+}
+
+
 .mid-cards {
-    display: contents;
-    gap: 20px;
-    margin-right: 50px;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-column: 2;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .card-align {
@@ -181,33 +197,22 @@ h3 {
     width: 0%;
 }
 
-.career-cont {
-    background-color: #0054A4;
-    display: grid;
-    grid-template-rows: auto, auto, auto;
-    grid-template-columns: 1fr, 1fr;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0 auto;
-    width: 90%;
-}
-
 .deduction {
-    grid-column: 1;
-    /* Sits in the first column */
     background-color: white;
     border: 1px solid #0054A4;
     border-radius: 5px;
     padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 .monthly-taxes {
-    grid-column: 2;
-    /* Sits in the second column */
     background-color: white;
     border: 1px solid #0054A4;
     border-radius: 5px;
     padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 #display-monthly {
@@ -219,7 +224,11 @@ h3 {
 .taxes {
     background-color: #ffffff;
     display: flex;
+    flex-direction: column;
     border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .align-body {
@@ -234,36 +243,43 @@ h3 {
     gap: -5vw;
 }
 
+#career-details,
+.mid-cards,
+.end-card {
+    background-color: #0054A4;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 #career-details {
-    grid-column: 1 / span 2;
-    /* or grid-column: 1 / 3; */
-    grid-row: 1;
+    grid-column: 1;
     display: flex;
     justify-content: center;
     background-color: #0054A4;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 #career-details-2 {
     background-color: white;
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.deduction {
 
-    grid-column: 1;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.monthly-taxes {
-    grid-column: 2;
-    background-color: white;
-    height: 11vh;
-    border-radius: 5px;
+.end-card {
+    grid-column: 3;
+    background-color: #0054A4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .the-two-btns {
@@ -278,21 +294,13 @@ h3 {
     text-align: center;
 }
 
-.end-card {
-    grid-column: 1 / span 2;
-    /* Spans both columns again */
-    background-color: #0054A4;
-    padding: 20px;
-    border-radius: 5px;
-}
-
 .continue {
     background-color: #0054A4;
     text-decoration: none;
     color: white;
-    margin-top: 50px;
-    padding: 30px;
-    font-size: 50px;
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 30px;
     border-radius: 5px;
 }
 
@@ -328,6 +336,12 @@ h3 {
     align-items: center;
     gap: 20px;
     flex-direction: column;
+    font-size: 2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    line-height: 1.2;
+    padding: 10px;
 }
 
 #display-salary {
@@ -348,4 +362,59 @@ h3 {
     width: 60vh;
     margin-bottom: 5vh;
     height: fit-content
+}
+
+#tax-breakdown p {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.card-align {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);    
+    gap: 15px;
+    width: 45%; 
+    margin-left: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.pie-input {
+    background-color: #0054A4;
+    padding: 12px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    width: 100%; 
+    height: auto;
+    box-sizing: border-box;
+}
+
+.expense {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.expense-input {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
 }
