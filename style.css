@@ -372,10 +372,10 @@ h3 {
 
 .card-align {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(3, auto);    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
     gap: 15px;
-    width: 45%; 
+    width: 45%;
     margin-left: 20px;
     margin-top: 20px;
     box-sizing: border-box;
@@ -383,12 +383,12 @@ h3 {
 
 .pie-input {
     background-color: #0054A4;
-    padding: 12px; 
+    padding: 12px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 8px; 
-    width: 100%; 
+    gap: 8px;
+    width: 100%;
     height: auto;
     box-sizing: border-box;
 }
@@ -417,4 +417,68 @@ h3 {
     width: 100%;
     box-sizing: border-box;
     color: black;
+}
+
+#flex-starting {
+    display: flex;
+    justify-content: center;
+    max-width: 750px;
+}
+
+#color-key {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: 'Istok Web';
+    font-size: 18px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.key-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#red-key,
+#orange-key,
+#blue-key,
+#purple-key,
+#yellow-key,
+#green-key {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+
+#red-key {
+    background-color: #C50000;
+}
+
+#orange-key {
+    background-color: #FF5A00;
+}
+
+#blue-key {
+    background-color: #2B00FF;
+}
+
+#purple-key {
+    background-color: #812E96;
+}
+
+#yellow-key {
+    background-color: #FFE100;
+}
+
+#green-key {
+    background-color: #487451;
+}
+
+
+#color-key p {
+    margin: 0;
 }
