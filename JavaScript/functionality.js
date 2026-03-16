@@ -78,7 +78,7 @@ if (careerDropdown) {
     });
 }
 
-fetchData("JavaScript/data.json");
+fetchData("https://eecu-data-server.vercel.app/data");
 // chart stuff
 let budgetChart;
 
@@ -88,7 +88,6 @@ function initChart() {
 
     const monthlyNet = parseFloat(localStorage.getItem("monthlyNetIncome")) || 0;
     const monthlyTax = parseFloat(localStorage.getItem("monthlyTax")) || 0;
-
     const taxInput = document.getElementById('tax-input');
     const incomeInput = document.getElementById('income-input');
 
@@ -107,7 +106,24 @@ function initChart() {
         },
         options: {
             responsive: true,
-            plugins: { legend: { display: false } }
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            const dataset = context.dataset.data;
+                            const total = dataset.reduce((acc, value) => acc + value, 0);
+                            const currentValue = context.raw;
+
+                            const percentage = total > 0
+                                ? ((currentValue / total) * 100).toFixed(1)
+                                : 0;
+
+                            return `${context.label}: ${percentage}% ($${currentValue.toLocaleString()})`;
+                        }
+                    }
+                }
+            }
         }
     });
 
@@ -144,7 +160,7 @@ function updateChart() {
             tipBox.style.color = "#FF5A00";
             tipBox.style.fontWeight = "bold";
         } else {
-            tipBox.textContent = "Excellent saving for your future! (Scroll Down)";
+            tipBox.textContent = "Excellent saving for your future!";
             tipBox.style.color = "#487451";
         }
     }

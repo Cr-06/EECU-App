@@ -1,2 +1,2 @@
 # EECU-App
-Change JSON back to the link, idk if fast would like it, need updates everywhere: if I press the back button i want it to remember the job. and put the job somewhere on results after they choose
+I need updates everywhere, if I press the back button I want it to remember the job. Put the job somewhere on results after they choose.
