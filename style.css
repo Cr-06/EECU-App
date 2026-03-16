@@ -483,3 +483,132 @@ h3 {
     margin: 0;
     font-weight: bold;
 }
+
+.results-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card-align {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: auto;
+    gap: 15px;
+    width: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.viz-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.chart-container {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+#surplus-box {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+#wise-up-tip {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: transparent;
+}
+/* this is where it converts for the mobile users */
+@media screen and (max-width: 768px) {
+
+    .career-cont {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        gap: 15px;
+    }
+
+    #career-details,
+    .mid-cards,
+    .end-card {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .results-main,
+    .results-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .card-align {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px auto;
+        grid-template-columns: 1fr;
+    }
+
+    .pie-input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .span-two {
+        grid-column: auto;
+    }
+
+    #flex-starting,
+    .viz-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    canvas#budgetChart {
+        max-width: 85vw !important;
+        height: auto !important;
+        margin: 20px 0;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .header-container img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .the-two-btns {
+        width: 120px;
+        font-size: 18px;
+    }
+}

@@ -7,91 +7,97 @@
     <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet'>
     <title>EECU Budget Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--to import the chart-->
 </head>
 
 <body>
-
     <header>
         <div class="header-container">
-            <img src="./imgs/eecu-logo 1.png" alt="Background image for landing page" class="eecu-logo">
+            <img src="./imgs/eecu-logo 1.png" alt="EECU Logo" class="eecu-logo">
             <h1 class="top">EECU Wise-Up Budget Calculator</h1>
         </div>
     </header>
+
     <section class="buttons">
         <a href="index.html" class="the-two-btns">Reset</a>
         <a href="calc.html" class="the-two-btns">Back</a>
     </section>
 
-    <!--For the color next to the inputs imma js put that
-    under the pie chart when I finally get to it-->
-
-    <section class="card-align">
-        <section class="pie-input">
-            <h4 class="expense">Student Loans</h4>
-            <input class="expense-input" type="text" placeholder="$ Amount">
-        </section>
-
-        <section class="pie-input">
-            <h4 class="expense">Housing</h4>
-            <input class="expense-input" type="text" placeholder="$ Amount">
-        </section>
-
-        <section class="pie-input">
-            <h4 class="expense">Essentials</h4>
-            <input class="expense-input" type="text" placeholder="$ Amount">
-        </section>
-
-        <section class="pie-input">
-            <h4 class="expense">Lifestyle</h4>
-            <input class="expense-input" type="text" placeholder="$ Amount">
-        </section>
-
-        <section class="pie-input">
-            <h4 class="expense">Future-Proofing</h4>
-            <input class="expense-input" type="text" placeholder="$ Amount">
-        </section>
-
-        <section class="pie-input">
-            <h4 class="expense">Net Monthly Income</h4>
-            <input class="expense-input" type="text" placeholder="$ Amount">
-        </section>
-    </section>
-    <div id="flex-starting">
-        <section id="color-key">
-            <div class="key-item">
-                <div id="red-key"></div>
-                <p>Student Loans</p>
+    <main class="results-main">
+        <section class="card-align">
+            <div class="pie-input">
+                <h4 class="expense">Student Loans</h4>
+                <input class="expense-input" type="number" placeholder="$ Amount">
             </div>
-            <div class="key-item">
-                <div id="orange-key"></div>
-                <p>Housing</p>
+            <div class="pie-input">
+                <h4 class="expense">Housing</h4>
+                <input class="expense-input" type="number" placeholder="$ Amount">
             </div>
-            <div class="key-item">
-                <div id="blue-key"></div>
-                <p>Essentials</p>
+            <div class="pie-input">
+                <h4 class="expense">Essentials</h4>
+                <input class="expense-input" type="number" placeholder="$ Amount">
             </div>
-
-            <div class="key-item">
-                <div id="purple-key"></div>
-                <p>Lifestyle</p>
+            <div class="pie-input">
+                <h4 class="expense">Lifestyle</h4>
+                <input class="expense-input" type="number" placeholder="$ Amount">
             </div>
-            <div class="key-item">
-                <div id="yellow-key"></div>
-                <p>Future-Proofing</p>
+            <div class="pie-input">
+                <h4 class="expense">Future-Proofing</h4>
+                <input class="expense-input" type="number" placeholder="$ Amount">
             </div>
-            <div class="key-item">
-                <div id="green-key"></div>
-                <p>Net Monthly Income</p>
+            <div class="pie-input">
+                <h4 class="expense">Monthly Taxes</h4>
+                <input class="expense-input" id="tax-input" type="number" placeholder="$ Amount" readonly>
+            </div>
+            <div class="pie-input span-two">
+                <h4 class="expense">Net Monthly Income</h4>
+                <input class="expense-input" id="income-input" type="number" placeholder="$ Amount" readonly>
             </div>
         </section>
-    </div>
+        <!-- Changed names for better clarity, it was hard to navigate earlier-->
+        <section class="viz-section">
+            <div class="chart-container">
+                <canvas id="budgetChart"></canvas>
+            </div>
+            <div id="color-key">
+                <div class="key-item">
+                    <div id="red-key"></div>
+                    <p>Student Loans</p>
+                </div>
+                <div class="key-item">
+                    <div id="orange-key"></div>
+                    <p>Housing</p>
+                </div>
+                <div class="key-item">
+                    <div id="blue-key"></div>
+                    <p>Essentials</p>
+                </div>
+                <div class="key-item">
+                    <div id="purple-key"></div>
+                    <p>Lifestyle</p>
+                </div>
+                <div class="key-item">
+                    <div id="yellow-key"></div>
+                    <p>Future-Proofing</p>
+                </div>
+                <div class="key-item"> <!--did it like this bc it was faster-->
+                    <div style="background-color: #555; width:15px; height:15px; border-radius:50%"></div>
+                    <p>Taxes</p>
+                </div>
+                <div class="key-item">
+                    <div id="green-key"></div>
+                    <p>Remaining</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <span id="surplus-box">
-
-        </span>
+        <div id="wise-up-tip"></div>
+        <div id="surplus-box"></div>
     </footer>
+
+    <script src="./JavaScript/functionality.js"></script>
 </body>
-<script src="./JavaScript/functionality.js"></script>
 
 </html>
