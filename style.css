@@ -533,6 +533,7 @@ h3 {
 footer {
     background-color: transparent;
 }
+
 /* this is where it converts for the mobile users */
 @media screen and (max-width: 768px) {
 
@@ -609,4 +610,17 @@ footer {
         width: 120px;
         font-size: 18px;
     }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 50px;
+    gap: 15px;
+}
+
+#results-job-title {
+    margin-right: auto;
+    font-family: 'Istok Web', sans-serif;
 }

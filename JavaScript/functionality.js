@@ -13,6 +13,13 @@ async function fetchData(url) {
                 option.textContent = career.Occupation;
                 dropdown.appendChild(option);
             });
+
+            // memory if you press back button
+            const savedIndex = localStorage.getItem("selectedCareerIndex");
+            if (savedIndex !== null) {
+                dropdown.value = savedIndex;
+                dropdown.dispatchEvent(new Event('change'));
+            }
         }
     } catch (error) {
         console.error("Error fetching data:", error);
@@ -35,7 +42,6 @@ if (careerDropdown) {
             const selectedCareer = allCareers[selectedIndex];
             const salary = Number(selectedCareer.Salary);
             const formatOptions = { minimumFractionDigits: 2, maximumFractionDigits: 2 };
-
 
             const socialSecurity = salary * 0.062;
             const medicare = salary * 0.0145;
@@ -61,6 +67,8 @@ if (careerDropdown) {
 
             localStorage.setItem("monthlyNetIncome", monthlyNet);
             localStorage.setItem("monthlyTax", monthlyTaxAmount);
+            localStorage.setItem("selectedCareerName", selectedCareer.Occupation);
+            localStorage.setItem("selectedCareerIndex", selectedIndex);
 
             if (nameSpan) nameSpan.textContent = selectedCareer.Occupation;
             if (salarySpan) salarySpan.textContent = "$" + salary.toLocaleString();
@@ -88,6 +96,13 @@ function initChart() {
 
     const monthlyNet = parseFloat(localStorage.getItem("monthlyNetIncome")) || 0;
     const monthlyTax = parseFloat(localStorage.getItem("monthlyTax")) || 0;
+
+    const jobTitleDisplay = document.getElementById("results-job-title");
+    const savedJobName = localStorage.getItem("selectedCareerName");
+    if (jobTitleDisplay && savedJobName) {
+        jobTitleDisplay.textContent = "Budget for: " + savedJobName;
+    }
+
     const taxInput = document.getElementById('tax-input');
     const incomeInput = document.getElementById('income-input');
 
@@ -114,11 +129,7 @@ function initChart() {
                             const dataset = context.dataset.data;
                             const total = dataset.reduce((acc, value) => acc + value, 0);
                             const currentValue = context.raw;
-
-                            const percentage = total > 0
-                                ? ((currentValue / total) * 100).toFixed(1)
-                                : 0;
-
+                            const percentage = total > 0 ? ((currentValue / total) * 100).toFixed(1) : 0;
                             return `${context.label}: ${percentage}% ($${currentValue.toLocaleString()})`;
                         }
                     }
@@ -140,7 +151,7 @@ function updateChart() {
     const monthlyNet = parseFloat(localStorage.getItem("monthlyNetIncome")) || 0;
     const monthlyTax = parseFloat(localStorage.getItem("monthlyTax")) || 0;
 
-    const totalSpent = userExpenses.reduce((a, b) => a + b, 0);
+    const totalSpent = userExpenses.reduce((acc, b) => acc + b, 0);
     const remainingBalance = monthlyNet - totalSpent;
     // updates the slices
     budgetChart.data.datasets[0].data = [...userExpenses, monthlyTax, Math.max(0, remainingBalance)];
